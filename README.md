@@ -23,7 +23,7 @@ An automated data pipeline that extracts weather data from OpenWeather API, proc
 
 ## Architecture
 
-[Project Architecture](architecture\architecture-diagram.png)
+[Project Architecture](architecture/architecture-diagram.png)
 
 ## Architecture Pattern
 
@@ -317,11 +317,11 @@ More queries in `scripts/sql/sample_queries.sql`
 ## Screenshots
 
 ### Forecast Analytics Dashboard
-![Forecast Analytics](dashboards\images\Weather-Forecast-Analytics-Dashboard.jpg)
+![Forecast Analytics](dashboards/images/Weather-Forecast-Analytics-Dashboard.jpg)
 
 
 ### Weather Insights Dashboard
-![Weather Insights](dashboards\images\Weather-Insights-Dashboard.jpg)
+![Weather Insights](dashboards/images/Weather-Insights-Dashboard.jpg)
 
 ---
 
