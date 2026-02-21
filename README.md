@@ -1,6 +1,6 @@
-# Weather Data Warehouse on AWS
+# Weather Data Lakehouse on AWS
 
-> End-to-end serverless data warehouse for weather forecast analysis across 8 global cities
+> End-to-end serverless data lakehouse for weather forecast analysis across 8 global cities
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
@@ -62,7 +62,7 @@ historical tracking).
 
 ## Project Structure
 ```
-weather-data-warehouse/
+weather-data-lakehouse/
 ├── README.md
 ├── architecture/
 │   └── architecture-diagram.png
