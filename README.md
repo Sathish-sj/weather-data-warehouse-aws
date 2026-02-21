@@ -344,6 +344,6 @@ More queries in `scripts/sql/sample_queries.sql`
 
 ---
 
-**Star this repo if you found it helpful!**
+**⭐ Star this repo if you found it helpful!**
 ```
 Built on AWS | Data Engineering Portfolio Project
