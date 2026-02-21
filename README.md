@@ -5,7 +5,7 @@
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![PySpark](https://img.shields.io/badge/PySpark-ETL-red)
-
+![SQL](https://img.shields.io/badge/SQL-Athena-brightgreen)
 ## Project Overview
 
 An automated data pipeline that extracts weather data from OpenWeather API, processes it through a medallion architecture (Bronze → Silver → Gold), and provides interactive dashboards for forecast accuracy analysis.
@@ -22,24 +22,8 @@ An automated data pipeline that extracts weather data from OpenWeather API, proc
 ---
 
 ## Architecture
-```
-┌─────────────┐      ┌──────────┐      ┌─────────┐      ┌─────────┐      ┌────────────┐
-│ OpenWeather │ ───> │  Lambda  │ ───> │ S3      │ ───> │  Glue   │ ───> │  Athena    │
-│    API      │      │ Extractor│      │ Bronze  │      │   ETL   │      │   Views    │
-└─────────────┘      └──────────┘      └─────────┘      └─────────┘      └────────────┘
-                           │                 │                 │                 │
-                           │                 ▼                 ▼                 ▼
-                           │          ┌─────────┐      ┌─────────┐      ┌────────────┐
-                           │          │ S3      │      │ S3      │      │ QuickSight │
-                           │          │ Silver  │      │ Gold    │      │ Dashboards │
-                           │          └─────────┘      └─────────┘      └────────────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │ EventBridge  │
-                    │ (Daily 6 AM) │
-                    └──────────────┘
-```
+
+[Project Architecture](architecture\architecture-diagram.png)
 
 ## Architecture Pattern
 
@@ -94,9 +78,6 @@ weather-data-warehouse/
 ├── dashboards/
 │   ├── Weather Forecast Analytics Dashboard.pdf  # Forecast accuracy analysis
 │   └── Weather Insights Dashboard.pdf            # Real-time weather monitoring
-├── docs/
-│   ├── setup-guide.md                            # Deployment instructions
-│   └── troubleshooting.md                        # Common issues & solutions
 └── .gitignore
 ```
 
@@ -336,10 +317,11 @@ More queries in `scripts/sql/sample_queries.sql`
 ## Screenshots
 
 ### Forecast Analytics Dashboard
-![Forecast Analytics](dashboards/Weather Forecast Analytics Dashboard.pdf)
+![Forecast Analytics](dashboards\images\Weather-Forecast-Analytics-Dashboard.jpg)
+
 
 ### Weather Insights Dashboard
-![Weather Insights](dashboards/Weather Insights Dashboard.png)
+![Weather Insights](dashboards\images\Weather-Insights-Dashboard.jpg)
 
 ---
 
@@ -347,7 +329,7 @@ More queries in `scripts/sql/sample_queries.sql`
 
 **Sathish J**
 
-- LinkedIn: [Sathish Jayaseelan](https://www.linkedin.com/in/sathish-jayaseelan/)
+- LinkedIn: [Sathish](https://www.linkedin.com/in/sathish-jayaseelan/)
 
 ---
 
