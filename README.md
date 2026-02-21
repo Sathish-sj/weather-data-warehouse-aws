@@ -23,7 +23,7 @@ An automated data pipeline that extracts weather data from OpenWeather API, proc
 
 ## Architecture
 
-[Project Architecture](architecture/architecture-diagram.png)
+![Project Architecture](architecture/architecture-diagram.png)
 
 ## Architecture Pattern
 
